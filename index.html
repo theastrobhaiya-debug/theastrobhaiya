@@ -1,0 +1,1188 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>The Astro Bhaiya | Vedic Astrology Consultation by Shivam Bansal</title>
+
+  <meta name="description" content="Book a personal Vedic astrology consultation with The Astro Bhaiya, Shivam Bansal. Get thoughtful guidance on career, business, relationships, marriage, finances and major life decisions through detailed chart analysis.">
+
+  <meta name="keywords" content="Vedic astrology consultation, astrologer India, online astrologer, kundli consultation, business astrology, career astrology, marriage astrology, relationship astrology, Shivam Bansal, The Astro Bhaiya">
+
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://theastrobhaiya.com/">
+
+  <meta property="og:title" content="The Astro Bhaiya | Vedic Astrology Consultation">
+  <meta property="og:description" content="Personal astrology guidance for the questions that actually matter.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://theastrobhaiya.com/">
+
+  <style>
+
+    :root {
+      --ink: #17130f;
+      --muted: #6e655d;
+      --paper: #fbf8f3;
+      --card: #fffdf9;
+      --accent: #8b5e34;
+      --line: #e9e0d5;
+      --dark: #211a15;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system,
+        BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background: var(--paper);
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .wrap {
+      max-width: 1180px;
+      margin: auto;
+      padding: 0 24px;
+    }
+
+    /* NAVIGATION */
+
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(251, 248, 243, 0.94);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .navin {
+      height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      font-size: 20px;
+    }
+
+    .links {
+      display: flex;
+      gap: 28px;
+      color: #554c44;
+      font-size: 14px;
+    }
+
+    .links a:hover {
+      color: var(--accent);
+    }
+
+    /* BUTTONS */
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 13px 20px;
+      border-radius: 999px;
+      font-weight: 700;
+      font-size: 14px;
+      transition: transform 0.2s ease, opacity 0.2s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      opacity: 0.92;
+    }
+
+    .btn-dark {
+      background: var(--dark);
+      color: #fff;
+    }
+
+    .btn-light {
+      border: 1px solid var(--line);
+      background: #fff;
+    }
+
+    /* HERO */
+
+    .hero {
+      padding: 92px 0 80px;
+      background:
+        radial-gradient(
+          circle at 78% 22%,
+          #ead9c4 0,
+          transparent 31%
+        ),
+        var(--paper);
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 70px;
+      align-items: center;
+    }
+
+    .eyebrow {
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      font-size: 11px;
+      font-weight: 800;
+      color: var(--accent);
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      font-family: Georgia, serif;
+      font-size: clamp(46px, 6vw, 78px);
+      line-height: 1.02;
+      letter-spacing: -0.055em;
+      margin: 0 0 25px;
+      font-weight: 500;
+    }
+
+    .lead {
+      font-size: 19px;
+      color: var(--muted);
+      max-width: 620px;
+      margin-bottom: 32px;
+    }
+
+    .actions {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .trust {
+      display: flex;
+      gap: 30px;
+      margin-top: 38px;
+      padding-top: 24px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .trust strong {
+      display: block;
+      color: var(--ink);
+      font-size: 22px;
+      letter-spacing: -0.03em;
+    }
+
+    /* HERO IMAGE AREA */
+
+    .portrait {
+      min-height: 510px;
+      border-radius: 28px;
+      background:
+        linear-gradient(
+          145deg,
+          #e7d7c4,
+          #b68c65
+        );
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      align-items: end;
+    }
+
+    .portrait:after {
+      content: "";
+      position: absolute;
+      inset: 12% 10% 0;
+      background:
+        radial-gradient(
+          ellipse at 50% 25%,
+          rgba(255,255,255,.35),
+          transparent 50%
+        ),
+        linear-gradient(
+          180deg,
+          transparent 20%,
+          rgba(30,20,12,.24)
+        );
+      border-radius: 50% 50% 0 0;
+    }
+
+    .portrait-copy {
+      position: relative;
+      z-index: 2;
+      color: #fff;
+      padding: 34px;
+      font-family: Georgia, serif;
+      font-size: 26px;
+      max-width: 390px;
+    }
+
+    /* SECTIONS */
+
+    section {
+      padding: 92px 0;
+    }
+
+    .section-head {
+      max-width: 720px;
+      margin-bottom: 42px;
+    }
+
+    .kicker {
+      color: var(--accent);
+      font-weight: 800;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+    }
+
+    h2 {
+      font-family: Georgia, serif;
+      font-size: clamp(36px, 4vw, 54px);
+      line-height: 1.08;
+      letter-spacing: -0.04em;
+      font-weight: 500;
+      margin: 12px 0 14px;
+    }
+
+    .sub {
+      color: var(--muted);
+      font-size: 17px;
+    }
+
+    /* CONSULTATIONS */
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      padding: 28px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 14px 35px rgba(40, 25, 15, 0.08);
+    }
+
+    .card h3 {
+      font-family: Georgia, serif;
+      font-size: 25px;
+      font-weight: 500;
+      margin: 10px 0;
+    }
+
+    .card p {
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .number {
+      font-size: 12px;
+      color: var(--accent);
+      font-weight: 800;
+    }
+
+    /* DARK SECTION */
+
+    .dark {
+      background: var(--dark);
+      color: #fff;
+    }
+
+    .dark .sub,
+    .dark p {
+      color: #c7bbb0;
+    }
+
+    .dark .kicker {
+      color: #d9ad7b;
+    }
+
+    .split {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 70px;
+      align-items: start;
+    }
+
+    .quote {
+      font-family: Georgia, serif;
+      font-size: 30px;
+      line-height: 1.25;
+      border-left: 2px solid var(--accent);
+      padding-left: 25px;
+    }
+
+    .list {
+      display: grid;
+      gap: 12px;
+      margin-top: 28px;
+    }
+
+    .list div {
+      padding: 18px 0;
+      border-bottom: 1px solid rgba(255,255,255,.13);
+    }
+
+    .list b {
+      display: block;
+      margin-bottom: 3px;
+    }
+
+    /* PROCESS */
+
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+
+    .step {
+      padding: 30px;
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      background: #fff;
+    }
+
+    .step span {
+      font-family: Georgia, serif;
+      font-size: 36px;
+      color: var(--accent);
+    }
+
+    .step h3 {
+      margin: 10px 0 5px;
+    }
+
+    /* FAQ */
+
+    .faq {
+      max-width: 850px;
+    }
+
+    .faq details {
+      border-top: 1px solid var(--line);
+      padding: 20px 0;
+    }
+
+    .faq summary {
+      cursor: pointer;
+      font-weight: 700;
+    }
+
+    .faq p {
+      color: var(--muted);
+      margin-bottom: 0;
+    }
+
+    /* CTA */
+
+    .cta {
+      background: #eadcc9;
+      border-radius: 30px;
+      padding: 60px;
+      text-align: center;
+    }
+
+    .cta h2 {
+      max-width: 700px;
+      margin: 10px auto 18px;
+    }
+
+    .cta p {
+      color: #66594d;
+      max-width: 620px;
+      margin: 0 auto 28px;
+    }
+
+    /* FOOTER */
+
+    footer {
+      padding: 40px 0;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .foot {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    /* MOBILE */
+
+    @media (max-width: 800px) {
+
+      .links {
+        display: none;
+      }
+
+      .hero {
+        padding: 62px 0;
+      }
+
+      .hero-grid,
+      .split {
+        grid-template-columns: 1fr;
+        gap: 35px;
+      }
+
+      .portrait {
+        min-height: 390px;
+      }
+
+      .cards,
+      .steps {
+        grid-template-columns: 1fr;
+      }
+
+      .trust {
+        gap: 18px;
+        flex-wrap: wrap;
+      }
+
+      section {
+        padding: 68px 0;
+      }
+
+      .cta {
+        padding: 38px 22px;
+      }
+
+      .navin .btn {
+        padding: 10px 15px;
+        font-size: 12px;
+      }
+    }
+
+  </style>
+
+  <!-- SEO STRUCTURED DATA -->
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "The Astro Bhaiya",
+    "url": "https://theastrobhaiya.com/",
+    "description": "Personal Vedic astrology consultations by Shivam Bansal.",
+    "areaServed": "Worldwide",
+    "serviceType": [
+      "Vedic Astrology Consultation",
+      "Career Astrology",
+      "Business Astrology",
+      "Relationship Astrology",
+      "Marriage Astrology"
+    ]
+  }
+  </script>
+
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+
+<nav>
+
+  <div class="wrap navin">
+
+    <a class="logo" href="/">
+      The Astro Bhaiya
+    </a>
+
+    <div class="links">
+
+      <a href="#consultations">
+        Consultations
+      </a>
+
+      <a href="#approach">
+        Approach
+      </a>
+
+      <a href="#about">
+        About
+      </a>
+
+      <a href="#faq">
+        FAQ
+      </a>
+
+    </div>
+
+    <a
+      class="btn btn-dark"
+      href="https://topmate.io/astrobhaiya"
+      target="_blank"
+      rel="noopener"
+    >
+      Book a Consultation
+    </a>
+
+  </div>
+
+</nav>
+
+
+<main>
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+  <div class="wrap hero-grid">
+
+    <div>
+
+      <div class="eyebrow">
+        Vedic Astrology • Personal Guidance
+      </div>
+
+      <h1>
+        Your chart has a story.
+        Let's understand it.
+      </h1>
+
+      <p class="lead">
+        A personal astrology consultation for when you need more
+        than a generic prediction. Understand your patterns, timing
+        and possibilities — and make important decisions with
+        greater clarity.
+      </p>
+
+      <div class="actions">
+
+        <a
+          class="btn btn-dark"
+          href="https://topmate.io/astrobhaiya"
+          target="_blank"
+          rel="noopener"
+        >
+          Book a Consultation →
+        </a>
+
+        <a
+          class="btn btn-light"
+          href="#approach"
+        >
+          How I Read a Chart
+        </a>
+
+      </div>
+
+      <div class="trust">
+
+        <div>
+          <strong>14K+</strong>
+          consultations
+        </div>
+
+        <div>
+          <strong>1:1</strong>
+          personal sessions
+        </div>
+
+        <div>
+          <strong>Vedic</strong>
+          chart-based approach
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <div class="portrait">
+
+      <div class="portrait-copy">
+
+        “Astrology is not about telling you
+        what you want to hear. It is about
+        helping you see what you may be
+        missing.”
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- CONSULTATIONS -->
+
+<section id="consultations">
+
+  <div class="wrap">
+
+    <div class="section-head">
+
+      <div class="kicker">
+        What can we explore?
+      </div>
+
+      <h2>
+        Bring the question that keeps coming back.
+      </h2>
+
+      <p class="sub">
+        Your consultation is built around your chart and
+        your real-life situation — not a template.
+      </p>
+
+    </div>
+
+
+    <div class="cards">
+
+
+      <article class="card">
+
+        <span class="number">01</span>
+
+        <h3>
+          Career & Business
+        </h3>
+
+        <p>
+          Understand professional phases, growth periods,
+          business decisions, partnerships, risk-taking and
+          the timing of major moves.
+        </p>
+
+      </article>
+
+
+      <article class="card">
+
+        <span class="number">02</span>
+
+        <h3>
+          Love & Marriage
+        </h3>
+
+        <p>
+          Explore relationship patterns, compatibility,
+          marriage timing and the dynamics that may be
+          shaping your personal life.
+        </p>
+
+      </article>
+
+
+      <article class="card">
+
+        <span class="number">03</span>
+
+        <h3>
+          Life Direction
+        </h3>
+
+        <p>
+          When everything feels uncertain, use your chart
+          to understand larger cycles, strengths, challenges
+          and periods of change.
+        </p>
+
+      </article>
+
+
+      <article class="card">
+
+        <span class="number">04</span>
+
+        <h3>
+          Money & Wealth
+        </h3>
+
+        <p>
+          Look at financial patterns, wealth-building periods,
+          opportunities and planetary cycles influencing
+          your approach to money.
+        </p>
+
+      </article>
+
+
+      <article class="card">
+
+        <span class="number">05</span>
+
+        <h3>
+          Timing & Decisions
+        </h3>
+
+        <p>
+          Not every question is about “what will happen?”
+          Sometimes the better question is “when should
+          I act?”
+        </p>
+
+      </article>
+
+
+      <article class="card">
+
+        <span class="number">06</span>
+
+        <h3>
+          A Question You Can't Shake
+        </h3>
+
+        <p>
+          Have one specific question? A focused chart-based
+          consultation can help you examine it from a
+          deeper perspective.
+        </p>
+
+      </article>
+
+
+    </div>
+
+
+    <!-- CONSULTATION CTA -->
+
+    <div style="text-align:center;margin-top:42px;">
+
+      <a
+        class="btn btn-dark"
+        href="https://topmate.io/astrobhaiya"
+        target="_blank"
+        rel="noopener"
+      >
+        Book Your Consultation →
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- APPROACH -->
+
+<section id="approach" class="dark">
+
+  <div class="wrap split">
+
+    <div>
+
+      <div class="kicker">
+        My approach
+      </div>
+
+      <h2>
+        Less fortune-telling.
+        More understanding.
+      </h2>
+
+      <p class="quote">
+        “The chart doesn't make the decision for you.
+        It helps you understand the landscape you're
+        making the decision in.”
+      </p>
+
+    </div>
+
+
+    <div>
+
+      <p class="sub">
+        I don't believe a birth chart should be reduced
+        to a list of automated planetary meanings.
+        A meaningful reading requires context, timing
+        and synthesis.
+      </p>
+
+
+      <div class="list">
+
+        <div>
+
+          <b>
+            Birth Chart Analysis
+          </b>
+
+          <span>
+            Planetary strength, houses, lordships and
+            the overall structure of the chart.
+          </span>
+
+        </div>
+
+
+        <div>
+
+          <b>
+            Dasha & Antardasha
+          </b>
+
+          <span>
+            Understanding the planetary periods that
+            activate different themes in your life.
+          </span>
+
+        </div>
+
+
+        <div>
+
+          <b>
+            Transits
+          </b>
+
+          <span>
+            Looking at how current planetary movements
+            interact with your chart.
+          </span>
+
+        </div>
+
+
+        <div>
+
+          <b>
+            Nakshatras & Vargas
+          </b>
+
+          <span>
+            Going beyond surface-level interpretations
+            when the question requires deeper analysis.
+          </span>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ABOUT -->
+
+<section id="about">
+
+  <div class="wrap split">
+
+    <div>
+
+      <div class="kicker">
+        Meet The Astro Bhaiya
+      </div>
+
+      <h2>
+        I'm Shivam Bansal.
+      </h2>
+
+    </div>
+
+
+    <div>
+
+      <p class="sub">
+        Over thousands of consultations, I've spoken
+        with people navigating career uncertainty,
+        relationships, business decisions, financial
+        pressure and major turning points.
+      </p>
+
+      <p>
+        Those conversations changed the way I look
+        at astrology. Behind every chart is a real
+        person with a very specific context. That's
+        why I approach consultations as a conversation
+        first and a chart reading second.
+      </p>
+
+      <p>
+        The goal isn't to create fear or give you a
+        dramatic prediction. It's to give you a clearer
+        understanding of the patterns and timing shown
+        by your chart — so you can approach your choices
+        more consciously.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- HOW IT WORKS -->
+
+<section>
+
+  <div class="wrap">
+
+    <div class="section-head">
+
+      <div class="kicker">
+        How it works
+      </div>
+
+      <h2>
+        Simple. Personal. Focused on you.
+      </h2>
+
+    </div>
+
+
+    <div class="steps">
+
+
+      <div class="step">
+
+        <span>01</span>
+
+        <h3>
+          Choose your consultation
+        </h3>
+
+        <p>
+          Tell me what you want to understand —
+          career, business, relationships, marriage,
+          money or a specific decision.
+        </p>
+
+      </div>
+
+
+      <div class="step">
+
+        <span>02</span>
+
+        <h3>
+          Share your birth details
+        </h3>
+
+        <p>
+          Your date, exact time and place of birth
+          help create the chart used for the
+          consultation.
+        </p>
+
+      </div>
+
+
+      <div class="step">
+
+        <span>03</span>
+
+        <h3>
+          Have the conversation
+        </h3>
+
+        <p>
+          We look at the chart in context, discuss
+          your questions and translate the astrology
+          into practical understanding.
+        </p>
+
+      </div>
+
+
+    </div>
+
+
+    <div style="text-align:center;margin-top:42px;">
+
+      <a
+        class="btn btn-dark"
+        href="https://topmate.io/astrobhaiya"
+        target="_blank"
+        rel="noopener"
+      >
+        Start Your Consultation →
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- FAQ -->
+
+<section id="faq">
+
+  <div class="wrap faq">
+
+    <div class="section-head">
+
+      <div class="kicker">
+        Frequently asked
+      </div>
+
+      <h2>
+        Before you book.
+      </h2>
+
+    </div>
+
+
+    <details open>
+
+      <summary>
+        Do I need my exact birth time?
+      </summary>
+
+      <p>
+        For a detailed Vedic astrology reading, an
+        accurate birth time is strongly preferred because
+        even small differences can affect houses and timing.
+      </p>
+
+    </details>
+
+
+    <details>
+
+      <summary>
+        Can we discuss a specific question?
+      </summary>
+
+      <p>
+        Yes. In fact, a specific question and your
+        real-life context can make a consultation
+        considerably more useful.
+      </p>
+
+    </details>
+
+
+    <details>
+
+      <summary>
+        Do you only predict the future?
+      </summary>
+
+      <p>
+        No. A consultation can focus on patterns,
+        timing, decision-making, strengths, challenges
+        and possible periods of change — not just
+        future events.
+      </p>
+
+    </details>
+
+
+    <details>
+
+      <summary>
+        Is astrology a guarantee?
+      </summary>
+
+      <p>
+        No. Astrology should be treated as a system
+        of interpretation and guidance, not a guarantee
+        of outcomes. Your choices and circumstances
+        still matter.
+      </p>
+
+    </details>
+
+
+  </div>
+
+</section>
+
+
+<!-- FINAL BOOKING CTA -->
+
+<section id="book">
+
+  <div class="wrap">
+
+    <div class="cta">
+
+      <div class="kicker">
+        Ready when you are
+      </div>
+
+      <h2>
+        Let's look at your chart,
+        not a generic horoscope.
+      </h2>
+
+      <p>
+        If there is something you've been thinking
+        about for weeks, months or even years,
+        bring it to the consultation.
+      </p>
+
+
+      <a
+        class="btn btn-dark"
+        href="https://topmate.io/astrobhaiya"
+        target="_blank"
+        rel="noopener"
+      >
+        Book Your Astrology Consultation →
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+</main>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+  <div class="wrap foot">
+
+    <div>
+      © The Astro Bhaiya. All rights reserved.
+    </div>
+
+    <div>
+      Vedic Astrology Consultation • Online
+    </div>
+
+  </div>
+
+</footer>
+
+
+</body>
+</html>
